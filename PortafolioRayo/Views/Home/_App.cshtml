@@ -1,0 +1,65 @@
+﻿<div>
+    <h2>Aplicación Android</h2>
+    <p>La aplicación tiene dos funcionalidades principales, la primera es poder generar una plantilla de la huella dactilar de los profesores para registrarla en la base de datos y la segunda es poder generar registros de asistencias de los profesores tomando en cuenta su huella dactilar como medio de identificación. La funcionalidad de registrar las huellas de los profesores es una labor administrativa y la funcionalidad de registrar las asistencias es una tarea realizada por los prefectos, por este motivo al iniciar sesión un administrador tendrá su propio panel que será diferente al de un prefecto. La aplicación funciona con un lector de huellas bluetooth el modelo <b>HF4000 Plus</b>, dicho sensor proporciona una imagen de la huella dactilar de la cual se extraen sus características principales almacenándose en una matriz que posteriormente es transformada en una cadena hexadecimal para ser almacenada en la base de datos y en el proceso de toma de asistencia se realiza una comparación de las características de la huella obtenida en el momento de tomar la asistencia con las huellas de la base de datos.</p>
+</div>
+
+<div class="modal-app">
+    <button id="btnclickAPP" type="button" class="btn btn-primary">
+        APP
+    </button>
+    <div class="modal fade" id="imgModalAPP">
+        <div class="modal-dialog modal-lg" id="app-modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Aplicacion movil</h3>
+                    <button type="button" class="close" id="HidebtnModalTopAPP" data-dismiss="modal">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="modal-body" id="bodyApp">
+                    <div class="contenido-app">
+                        <div class="inner-app">
+                            <h4>Sensor HF4000 Plus</h4>
+                            <img src="/imagenes/app/hf4000.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Login - Administrador</h4>
+                            <img src="/imagenes/app/1-login.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Lista de profesores</h4>
+                            <img src="/imagenes/app/2-profesores.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Profesor sin Huellas</h4>
+                            <img src="/imagenes/app/3-sin-huellas.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Enrolando huellas</h4>
+                            <img src="/imagenes/app/4-enrolando.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Verificación de asignación</h4>
+                            <img src="/imagenes/app/5-con-huellas.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Login - prefecto</h4>
+                            <img src="/imagenes/app/6-login-prefecto.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Panel de toma de asistencia</h4>
+                            <img src="/imagenes/app/7-principal.png" />
+                        </div>
+                        <div class="inner-app">
+                            <h4>Profesor idnetificado para toma de asistencia</h4>
+                            <img src="/imagenes/app/8-identificaddo.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="HidebtnModalAPP" class="btn btn-primary">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

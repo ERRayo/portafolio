@@ -1,0 +1,251 @@
+﻿:root {
+    --color-1: #214177;
+    --color-2: #3667A6;
+    --color-3: #82A6CB;
+    --color-4: #BDD8F1;
+    --color-5: #A3C6C4;
+}
+
+#foto {
+    width: 200px;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+
+.div-fondo-nombre {
+    padding-bottom: 10%;
+    background-image: url(/imagenes/fondo-nombre.jpg);
+}
+
+.div-blur-nombre {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+    .div-blur-nombre h1 {
+        color: var(--color-4);
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    .div-blur-nombre h2 {
+        font-size: 1.4em;
+        color: var(--color-4);
+    }
+
+    .div-blur-nombre i {
+        color: white;
+        font-size: 40px;
+    }
+/*Seccion sobre mi*/
+.sobre-mi {
+    margin: 3rem 0 10rem 0;
+    text-align: justify;
+    font-size: 1.4em;
+    color: var(--color-2);
+    width: 100%; 
+}
+    .sobre-mi h1 {
+        color: var(--color-1);
+    }
+
+.ver-cv  a {
+    margin-right: auto;
+}
+/*---------*/
+.proyectos {
+    color: var(--color-1);
+}
+
+/*Carousel*/
+.card-carousel h1 {
+    color: var(--color-1);
+    font-size: 1.9em;
+    font-weight: bold;
+    padding-bottom: 0em;
+}
+
+.skills-carousel {
+    height: 170px;
+    width: 100%;
+}
+
+    .skills-carousel div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .skills-carousel img {
+        margin-top: 1em;
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*---------------*/
+.e-titulo {
+    color: var(--color-1);
+}
+/*----------*/
+
+.contenido {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner1 {
+    min-width: 200px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .inner1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .inner1 {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .inner2 {
+        width: 35%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .inner3 {
+        width: 30%;
+    }
+}
+
+.inner2 {
+   
+    min-width: 200px;
+    padding: 20px;
+}
+
+.inner3 {
+    
+    min-width: 200px;
+    padding: 20px;
+}
+
+/*titulo, instituto y fecha*/
+#list-title {
+    color: var(--color-2);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+#list-title-curso {
+    color: var(--color-1);
+}
+
+#list-institute {
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 1.0em;
+}
+
+#list-date {
+    font-size: 1.0em;
+    color: var(--color-4);
+    width: 18%;
+}
+
+#list-text {
+    font-size: 1.0em;
+    color: var(--color-4);
+}
+/*----------------------*/
+#list-item a {
+    color: var(--color-2);
+}
+
+    #list-item a:link {
+        text-decoration: none;
+    }
+
+    #list-item a:visited {
+        text-decoration: none;
+    }
+/*--Proyectos descripcion*/
+.e-titulo {
+    margin: 1rem 0 2rem 0;
+}
+/*--------*/
+.detalles-bioapp {
+    padding-top: 3em;
+}
+/*--Ajuste de imagenes modal app--*/
+.contenido-app {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-app {
+    margin: 5px;
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+}
+/*------*/
+/*---Modal base de datos*/
+#imgModal img {
+    width: 100%;
+}
+/*---Mondal App--*/
+
+@media only screen and (min-width: 600px) {
+    #app-modal-dialog {
+        max-width: 60% !important;
+    }
+    #bodyApp h4 {
+        height: 15%;
+    }
+}
+#imgModalAPP img {
+    width: 100%
+}
+
+/*---------*/
+.detalles-bioapp h1 {
+    color: var(--color-1);
+}
+/*-----------*/
+.detalles-bioapp h2 {
+    color: var(--color-2);
+}
+
+.contacto-email {
+    display: flex;
+    align-items: center;
+    color: var(--color-1);
+}
+
+    .contacto-email div {
+        padding: 15px;
+    }
+
+.contenido-contacto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--color-1);
+}
+
+.inner-contacto {
+    margin: 5px;
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    font-size: 1.4em;
+}

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+}
+<h4 style="color: #214177">Contáctame por mis redes sociales, envíame un email o utiliza el formulario de contacto</h4>
+<div class="contenido-contacto">
+    
+    <div class="inner-contacto" style="text-align:center">
+        <a href="https://www.linkedin.com/in/eduardo-rodriguez-rayo/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href=""><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/EdRayo/" target="_blank"r"><i class="bi bi-facebook"></i></a>
+    </div>
+    <div class="inner-contacto">
+        <i class="bi bi-envelope-at-fill"></i> rodriguez.rayo.ed@outlook.com
+    </div>
+</div>
+
+
+<h2 style="color: #214177">Formulario de Contacto</h2>
+
+<form asp-controller="Home" asp-action="Contacto">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" />
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">eMail</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@ejemplo.com" />
+    </div>
+
+    <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Deja tu mensaje"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>

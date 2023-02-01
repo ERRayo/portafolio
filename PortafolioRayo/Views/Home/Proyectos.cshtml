@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Proyecto>
+
+@{
+    ViewData["Title"] = "Proyectos";
+}
+
+<div class="container">
+    <h1 class="proyectos">Mis proyectos</h1>
+</div>
+
+<partial name="_ListadoProyectos" model="Model" />
+
+<div class="detalles-bioapp">
+    <div>
+        <h1>BioApp UAA</h1>
+        <p>
+            El proyecto BioAPP fue desarrollado como proyecto de titulacion, en donde se desarrolló el sistema para la Universidad Americana de Acapulco. El desarrollo del proyecto se detalla en la tesis titulada: <i>“Desarrollo de un sistema de identificación biométrico móvil para la toma de asistencias de los profesores de la Universidad Americana de Acapulco”</i>.
+            <br>
+            El sistema está constituido para la automatización de un proceso de toma de asistencias, en dicha institución la asistencia de los profesores cuando estos imparten sus clases es tomada de forma tradicional, en donde se realiza el proceso en papel y se verifica a los profesores con su firma.
+        </p>
+    </div>
+    <div>
+        <partial name="_BaseDeDatos" />
+    </div>
+    <div>
+        <partial name="_Api" />
+    </div>
+    <div>
+        <partial name="_App" />
+    </div>
+    <div>
+        <partial name="_PaginaWeb" />
+    </div>
+</div>
+
+
+
+
+
